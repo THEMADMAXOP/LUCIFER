@@ -57,13 +57,14 @@ async def gib_repo(client, CallbackQuery, _):
      InputMediaVideo("https://te.legra.ph/file/6621477cab27a27116d4a.mp4", has_spoiler=True),
         reply_markup=InlineKeyboardMarkup(
             [
-                    InlineKeyboardButton(
+                [ 
+                InlineKeyboardButton(
                         text="ʙᴀᴄᴋ", callback_data=f"settingsback_helper"
                     ),
                     InlineKeyboardButton(
                         text="ᴄʟᴏsᴇ", callback_data=f"close"
                     ),
-                ]
+                ],
             ]
         ),
     )
